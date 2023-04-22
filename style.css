@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+/************* CSS RESET ***********/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+} morbius
+
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/************* HIDE SCROLLBAR *************/
+html{
+    -ms-overflow-style: none;  /* For Internet Explorer 10+ */
+    scrollbar-width: none;  /* For Firefox */
+}
+
+html::-webkit-scrollbar {
+    display: none;  /* For Safari and Chrome */
+}
+
+/************* CUSTOM CSS *************/
+
+/*** TYPOGRAPHY ***/
+
+@font-face {
+    font-family: myFont;
+    src: url("Dead_Kansas.ttf") format('truetype');
+}
+
+
+.twd{
+    height: 100vh;
+    width: 100%;
+    display: block;
+    padding: 14px 16px;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("Dmtr_img/backimg.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+.logo{
+    width: 17%;
+    padding: 14px 16px;
+
+}
+nav ul li{
+    font-family: myFont, sans-serif;
+    font-size: 17px;
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: #a28b55;
+    transition: .3s;
+}
+.active{
+    color: #a28b55;
+}
