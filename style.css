@@ -72,13 +72,15 @@ html::-webkit-scrollbar {
 }
 
 * {
-    padding: 55px;
+    margin: 0;
+    padding: 0;
+    font-family: Bahnschrift, sans-serif;
     box-sizing: border-box;
 }
 
 body {
     font-family: sans-serif;background-color: black;
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("Dmtr_img/backimg.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.7)), url("Dmtr_img/backimg.jpg");
     background-size: cover;
 }
 
@@ -115,7 +117,7 @@ body {
     font-size: 15px;
     color: white;
     text-decoration: none;
-
+    font-family: myFont, sans-serif;
     transition: all 0.3s;
 }
 
@@ -133,8 +135,8 @@ body {
 
 .fas {
     float: right;
-    margin-left: 10px;
-    padding-top: 3px;
+    margin-left: 5px;
+    padding-top: 1px;
 }
 
 /* dropdown menu style */
@@ -172,91 +174,36 @@ body {
     background-color: black;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.menu-bar{
-    height: 100vh;
-    width: 100%;
-    display: block;
-    padding: 14px 16px;
-    background-color: black;
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("Dmtr_img/backimg.jpg");
-    background-size: cover;
-    background-position: center;
+.wrapper{
+    margin: 100px auto;
+    width: 70%;
 }
 
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 10px;
-    padding-right: 5%;
-    padding-left: 5%;
+.copertina{
+    max-width: 600px;
+    float: left;
+    border: 3px solid #5b5748;
+    border-radius: 10px;
+    margin-right: 15px;
 }
 
-.logo{
-    width: 17%;
-    padding: 14px 16px;
-}
-
-nav ul li{
-    font-family: myFont, sans-serif;
-    font-size: 17px;
-    position: relative;
-    display: inline-block;
-    list-style-type: none;
-    padding: 10px 20px;
-}
-
-nav ul li a{
+.text-box{
     color: white;
-    text-decoration: none;
 }
 
-nav ul li a:hover{
+.text-box h2{
+    font-size: 42px;
+    font-family: myFont, sans-serif;
+    font-weight: normal;
     color: #a28b55;
-    transition: .3s;
+    margin-bottom: 25px;
 }
 
-.dropdown__menu{
-    display: none;
-}
-
-nav ul li :hover .dropdown__menu{
+.text-box p{
+    font-size: 16px;
     display: block;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    background-color: black;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
-
-.dropdown__menu ul{
-    display: block;
-}
-
-.fas{
-    float: right;
-    margin-left: 8px;
-}
-
- */
