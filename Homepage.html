@@ -2,22 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
     <title>The Walking Dead</title>
 
     <link href="style.css" rel="stylesheet" type="text/css">
 
 </head>
 <body>
-    <div class = "twd">
-        <nav>
-            <img class = logo src="Dmtr_img/logo.png" alt="The Walking Dead Logo">
-            <ul>
-                <li><a class="active" href="Homepage.html">Homepage</a></li>
-                <li><a href="Serie.html">Serie</a></li>
-                <li><a href="Gallery.html">Gallery</a></li>
-            </ul>
-        </nav>
-    </div>
+<div class="menu-bar">
+    <img class = logo src="Dmtr_img/logo.png" alt="The Walking Dead Logo">
+    <ul>
+        <li><a class="active" href="Homepage.html">Homepage</a></li>
+        <li><a href="Serie.html">Serie <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-menu">
+                <ul>
+                    <li><a href="#">Trama</a></li>
+                    <li><a href="#">Cast</a></li>
+                    <li><a href="#">Curiosita'</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="Gallery.html">Gallery</a></li>
+    </ul>
+</div>
 
 </body>
 
