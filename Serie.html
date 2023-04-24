@@ -27,7 +27,7 @@
     </ul>
 </div>
 
-<div class="wrapper">
+<div id="trama" class="wrapper">
     <div class="text-box">
         <img class="copertina" src="Dmtr_img/copertina.jpg">
         <h2>Trama</h2>
@@ -40,14 +40,43 @@
     </div>
 </div>
 
-<div class="img-slider">
-    <div class="slide">
-        <img src="Dmtr_img/Andrew_Lincoln.jpg">
-        <div class="info">
-            <h2>Andrew_Lincoln</h2>
-            <p>L'attore interpreta il personaggio di Rick Grimes, protagonista della serie TV. Yeah</p>
+<div id="cast" class="container">
+    <div class="slides">
+        <input type="radio" name="common" id="btn1" checked>
+        <input type="radio" name="common" id="btn2">
+        <input type="radio" name="common" id="btn3">
+        <input type="radio" name="common" id="btn4">
+        <input type="radio" name="common" id="btn5">
+
+        <div class="image first">
+            <img src="Dmtr_img/Andrew_Lincoln.jpg">
+            <div class="info">
+                <h2>Andrew Lincoln</h2>
+                <p>L'attore interpreta il protagonista della serie Rick Grimes.</p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="Dmtr_img/Chandler_Riggs.jpg">
+        </div>
+        <div class="image">
+            <img src="Dmtr_img/Norman_Reedus.jpg">
+        </div>
+        <div class="image">
+            <img src="Dmtr_img/Jeffrey_Dean_Morgan.jpg">
+        </div>
+        <div class="image">
+            <img src="Dmtr_img/Steven_Yeun.jpg">
         </div>
     </div>
+
+    <div class="navigator">
+        <label for="btn1" class="bar"></label>
+        <label for="btn2" class="bar"></label>
+        <label for="btn3" class="bar"></label>
+        <label for="btn4" class="bar"></label>
+        <label for="btn5" class="bar"></label>
+    </div>
+
 </div>
 
 </body>
